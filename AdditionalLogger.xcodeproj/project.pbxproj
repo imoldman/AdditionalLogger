@@ -13,18 +13,8 @@
 		7F3B623A1AAEDEC7007198AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F3B62381AAEDEC7007198AB /* Main.storyboard */; };
 		7F3B623C1AAEDEC7007198AB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F3B623B1AAEDEC7007198AB /* Images.xcassets */; };
 		7F3B623F1AAEDEC7007198AB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F3B623D1AAEDEC7007198AB /* LaunchScreen.xib */; };
-		7F3B624B1AAEDEC7007198AB /* AdditionalLoggerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F3B624A1AAEDEC7007198AB /* AdditionalLoggerTests.m */; };
+		7F3B62571AAEDF42007198AB /* __ALPREFIX__Logger.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F3B62561AAEDF42007198AB /* __ALPREFIX__Logger.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		7F3B62451AAEDEC7007198AB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7F3B62231AAEDEC7007198AB /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7F3B622A1AAEDEC7007198AB;
-			remoteInfo = AdditionalLogger;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		7F3B622B1AAEDEC7007198AB /* AdditionalLogger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdditionalLogger.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -37,20 +27,12 @@
 		7F3B62391AAEDEC7007198AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7F3B623B1AAEDEC7007198AB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		7F3B623E1AAEDEC7007198AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		7F3B62441AAEDEC7007198AB /* AdditionalLoggerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdditionalLoggerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7F3B62491AAEDEC7007198AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7F3B624A1AAEDEC7007198AB /* AdditionalLoggerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdditionalLoggerTests.m; sourceTree = "<group>"; };
+		7F3B62551AAEDF42007198AB /* __ALPREFIX__Logger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = __ALPREFIX__Logger.h; sourceTree = "<group>"; };
+		7F3B62561AAEDF42007198AB /* __ALPREFIX__Logger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = __ALPREFIX__Logger.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		7F3B62281AAEDEC7007198AB /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7F3B62411AAEDEC7007198AB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -64,7 +46,6 @@
 			isa = PBXGroup;
 			children = (
 				7F3B622D1AAEDEC7007198AB /* AdditionalLogger */,
-				7F3B62471AAEDEC7007198AB /* AdditionalLoggerTests */,
 				7F3B622C1AAEDEC7007198AB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -73,7 +54,6 @@
 			isa = PBXGroup;
 			children = (
 				7F3B622B1AAEDEC7007198AB /* AdditionalLogger.app */,
-				7F3B62441AAEDEC7007198AB /* AdditionalLoggerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,6 +61,7 @@
 		7F3B622D1AAEDEC7007198AB /* AdditionalLogger */ = {
 			isa = PBXGroup;
 			children = (
+				7F3B62541AAEDEE9007198AB /* objc_src */,
 				7F3B62321AAEDEC7007198AB /* AppDelegate.h */,
 				7F3B62331AAEDEC7007198AB /* AppDelegate.m */,
 				7F3B62351AAEDEC7007198AB /* ViewController.h */,
@@ -102,22 +83,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		7F3B62471AAEDEC7007198AB /* AdditionalLoggerTests */ = {
+		7F3B62541AAEDEE9007198AB /* objc_src */ = {
 			isa = PBXGroup;
 			children = (
-				7F3B624A1AAEDEC7007198AB /* AdditionalLoggerTests.m */,
-				7F3B62481AAEDEC7007198AB /* Supporting Files */,
+				7F3B62551AAEDF42007198AB /* __ALPREFIX__Logger.h */,
+				7F3B62561AAEDF42007198AB /* __ALPREFIX__Logger.m */,
 			);
-			path = AdditionalLoggerTests;
-			sourceTree = "<group>";
-		};
-		7F3B62481AAEDEC7007198AB /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				7F3B62491AAEDEC7007198AB /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
+			path = objc_src;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -139,24 +112,6 @@
 			productReference = 7F3B622B1AAEDEC7007198AB /* AdditionalLogger.app */;
 			productType = "com.apple.product-type.application";
 		};
-		7F3B62431AAEDEC7007198AB /* AdditionalLoggerTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7F3B62511AAEDEC7007198AB /* Build configuration list for PBXNativeTarget "AdditionalLoggerTests" */;
-			buildPhases = (
-				7F3B62401AAEDEC7007198AB /* Sources */,
-				7F3B62411AAEDEC7007198AB /* Frameworks */,
-				7F3B62421AAEDEC7007198AB /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7F3B62461AAEDEC7007198AB /* PBXTargetDependency */,
-			);
-			name = AdditionalLoggerTests;
-			productName = AdditionalLoggerTests;
-			productReference = 7F3B62441AAEDEC7007198AB /* AdditionalLoggerTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -168,10 +123,6 @@
 				TargetAttributes = {
 					7F3B622A1AAEDEC7007198AB = {
 						CreatedOnToolsVersion = 6.2;
-					};
-					7F3B62431AAEDEC7007198AB = {
-						CreatedOnToolsVersion = 6.2;
-						TestTargetID = 7F3B622A1AAEDEC7007198AB;
 					};
 				};
 			};
@@ -189,7 +140,6 @@
 			projectRoot = "";
 			targets = (
 				7F3B622A1AAEDEC7007198AB /* AdditionalLogger */,
-				7F3B62431AAEDEC7007198AB /* AdditionalLoggerTests */,
 			);
 		};
 /* End PBXProject section */
@@ -205,13 +155,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7F3B62421AAEDEC7007198AB /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -222,26 +165,11 @@
 				7F3B62371AAEDEC7007198AB /* ViewController.m in Sources */,
 				7F3B62341AAEDEC7007198AB /* AppDelegate.m in Sources */,
 				7F3B62311AAEDEC7007198AB /* main.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7F3B62401AAEDEC7007198AB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7F3B624B1AAEDEC7007198AB /* AdditionalLoggerTests.m in Sources */,
+				7F3B62571AAEDF42007198AB /* __ALPREFIX__Logger.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		7F3B62461AAEDEC7007198AB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7F3B622A1AAEDEC7007198AB /* AdditionalLogger */;
-			targetProxy = 7F3B62451AAEDEC7007198AB /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		7F3B62381AAEDEC7007198AB /* Main.storyboard */ = {
@@ -359,40 +287,6 @@
 			};
 			name = Release;
 		};
-		7F3B62521AAEDEC7007198AB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = AdditionalLoggerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AdditionalLogger.app/AdditionalLogger";
-			};
-			name = Debug;
-		};
-		7F3B62531AAEDEC7007198AB /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = AdditionalLoggerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AdditionalLogger.app/AdditionalLogger";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -410,14 +304,6 @@
 			buildConfigurations = (
 				7F3B624F1AAEDEC7007198AB /* Debug */,
 				7F3B62501AAEDEC7007198AB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		7F3B62511AAEDEC7007198AB /* Build configuration list for PBXNativeTarget "AdditionalLoggerTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7F3B62521AAEDEC7007198AB /* Debug */,
-				7F3B62531AAEDEC7007198AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
