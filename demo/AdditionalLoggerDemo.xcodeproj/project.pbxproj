@@ -13,11 +13,11 @@
 		7F3B623A1AAEDEC7007198AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F3B62381AAEDEC7007198AB /* Main.storyboard */; };
 		7F3B623C1AAEDEC7007198AB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F3B623B1AAEDEC7007198AB /* Images.xcassets */; };
 		7F3B623F1AAEDEC7007198AB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F3B623D1AAEDEC7007198AB /* LaunchScreen.xib */; };
-		7F3B62571AAEDF42007198AB /* __ALPREFIX__Logger.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F3B62561AAEDF42007198AB /* __ALPREFIX__Logger.m */; };
+		7F3B625B1AAF090B007198AB /* __ALPREFIX__Logger.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F3B625A1AAF090B007198AB /* __ALPREFIX__Logger.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7F3B622B1AAEDEC7007198AB /* AdditionalLogger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdditionalLogger.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F3B622B1AAEDEC7007198AB /* AdditionalLoggerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdditionalLoggerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F3B622F1AAEDEC7007198AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F3B62301AAEDEC7007198AB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7F3B62321AAEDEC7007198AB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -27,8 +27,8 @@
 		7F3B62391AAEDEC7007198AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7F3B623B1AAEDEC7007198AB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		7F3B623E1AAEDEC7007198AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		7F3B62551AAEDF42007198AB /* __ALPREFIX__Logger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = __ALPREFIX__Logger.h; sourceTree = "<group>"; };
-		7F3B62561AAEDF42007198AB /* __ALPREFIX__Logger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = __ALPREFIX__Logger.m; sourceTree = "<group>"; };
+		7F3B62591AAF090B007198AB /* __ALPREFIX__Logger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = __ALPREFIX__Logger.h; sourceTree = "<group>"; };
+		7F3B625A1AAF090B007198AB /* __ALPREFIX__Logger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = __ALPREFIX__Logger.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +53,7 @@
 		7F3B622C1AAEDEC7007198AB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7F3B622B1AAEDEC7007198AB /* AdditionalLogger.app */,
+				7F3B622B1AAEDEC7007198AB /* AdditionalLoggerDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,7 +61,7 @@
 		7F3B622D1AAEDEC7007198AB /* AdditionalLogger */ = {
 			isa = PBXGroup;
 			children = (
-				7F3B62541AAEDEE9007198AB /* objc_src */,
+				7F3B62581AAF090B007198AB /* objc_src */,
 				7F3B62321AAEDEC7007198AB /* AppDelegate.h */,
 				7F3B62331AAEDEC7007198AB /* AppDelegate.m */,
 				7F3B62351AAEDEC7007198AB /* ViewController.h */,
@@ -83,21 +83,22 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		7F3B62541AAEDEE9007198AB /* objc_src */ = {
+		7F3B62581AAF090B007198AB /* objc_src */ = {
 			isa = PBXGroup;
 			children = (
-				7F3B62551AAEDF42007198AB /* __ALPREFIX__Logger.h */,
-				7F3B62561AAEDF42007198AB /* __ALPREFIX__Logger.m */,
+				7F3B62591AAF090B007198AB /* __ALPREFIX__Logger.h */,
+				7F3B625A1AAF090B007198AB /* __ALPREFIX__Logger.m */,
 			);
-			path = objc_src;
-			sourceTree = SOURCE_ROOT;
+			name = objc_src;
+			path = ../../objc_src;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7F3B622A1AAEDEC7007198AB /* AdditionalLogger */ = {
+		7F3B622A1AAEDEC7007198AB /* AdditionalLoggerDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7F3B624E1AAEDEC7007198AB /* Build configuration list for PBXNativeTarget "AdditionalLogger" */;
+			buildConfigurationList = 7F3B624E1AAEDEC7007198AB /* Build configuration list for PBXNativeTarget "AdditionalLoggerDemo" */;
 			buildPhases = (
 				7F3B62271AAEDEC7007198AB /* Sources */,
 				7F3B62281AAEDEC7007198AB /* Frameworks */,
@@ -107,9 +108,9 @@
 			);
 			dependencies = (
 			);
-			name = AdditionalLogger;
+			name = AdditionalLoggerDemo;
 			productName = AdditionalLogger;
-			productReference = 7F3B622B1AAEDEC7007198AB /* AdditionalLogger.app */;
+			productReference = 7F3B622B1AAEDEC7007198AB /* AdditionalLoggerDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -126,7 +127,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 7F3B62261AAEDEC7007198AB /* Build configuration list for PBXProject "AdditionalLogger" */;
+			buildConfigurationList = 7F3B62261AAEDEC7007198AB /* Build configuration list for PBXProject "AdditionalLoggerDemo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -139,7 +140,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7F3B622A1AAEDEC7007198AB /* AdditionalLogger */,
+				7F3B622A1AAEDEC7007198AB /* AdditionalLoggerDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -164,8 +165,8 @@
 			files = (
 				7F3B62371AAEDEC7007198AB /* ViewController.m in Sources */,
 				7F3B62341AAEDEC7007198AB /* AppDelegate.m in Sources */,
+				7F3B625B1AAF090B007198AB /* __ALPREFIX__Logger.m in Sources */,
 				7F3B62311AAEDEC7007198AB /* main.m in Sources */,
-				7F3B62571AAEDF42007198AB /* __ALPREFIX__Logger.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +274,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AdditionalLogger/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = AdditionalLoggerDemo;
 			};
 			name = Debug;
 		};
@@ -283,14 +284,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AdditionalLogger/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = AdditionalLoggerDemo;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7F3B62261AAEDEC7007198AB /* Build configuration list for PBXProject "AdditionalLogger" */ = {
+		7F3B62261AAEDEC7007198AB /* Build configuration list for PBXProject "AdditionalLoggerDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7F3B624C1AAEDEC7007198AB /* Debug */,
@@ -299,13 +300,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7F3B624E1AAEDEC7007198AB /* Build configuration list for PBXNativeTarget "AdditionalLogger" */ = {
+		7F3B624E1AAEDEC7007198AB /* Build configuration list for PBXNativeTarget "AdditionalLoggerDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7F3B624F1AAEDEC7007198AB /* Debug */,
 				7F3B62501AAEDEC7007198AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
