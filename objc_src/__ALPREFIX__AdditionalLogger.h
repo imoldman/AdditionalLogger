@@ -1,5 +1,5 @@
 //
-//  __ALPREFIX__Logger.h, create by TODO
+//  __ALPREFIX__AdditionalLogger.h, create by https://github.com/imoldman/AdditionalLogger
 //
 
 #import <Foundation/Foundation.h>
@@ -14,7 +14,7 @@
 #endif
 
 #define __ALPREFIX_UPPER__LOG(level, content, ...) do { \
-    [__ALPREFIX__Logger logWithLevel:level file:__FILE__ line:__LINE__ prefix:"__ALPREFIX__" log:(content), ##__VA_ARGS__]; \
+    [__ALPREFIX__AdditionalLogger logWithLevel:level file:__FILE__ line:__LINE__ prefix:"__ALPREFIX__" log:(content), ##__VA_ARGS__]; \
 } while(0)
 
 #define __ALPREFIX_UPPER__LOG_VERBOSE(content, ...) __ALPREFIX_UPPER__LOG(ALLOGGERLEVEL_VERBOSE, content, ##__VA_ARGS__)
@@ -30,7 +30,7 @@ typedef void(^ALLoggerBlockType)(int level, const char* fullpath, int line, cons
 #endif
 
 
-@interface __ALPREFIX__Logger : NSObject
+@interface __ALPREFIX__AdditionalLogger : NSObject
 + (void)setBlock:(ALLoggerBlockType)block;
 + (ALLoggerBlockType)block;
 

@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "__ALPREFIX__Logger.h"
+#import "__ALPREFIX__AdditionalLogger.h"
 
 @interface AppDelegate ()
 
@@ -17,7 +17,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    [__ALPREFIX__Logger setBlock:^(int level, const char *file, int line, const char *prefix, NSString *content) {
+    [__ALPREFIX__AdditionalLogger setBlock:^(int level, const char *file, int line, const char *prefix, NSString *content) {
         NSUInteger length = strlen(file);
         NSString* fullPath = [[NSString alloc] initWithBytesNoCopy:(void*)file length:length encoding:NSUTF8StringEncoding freeWhenDone:NO];
         NSString* fileName = [fullPath lastPathComponent];

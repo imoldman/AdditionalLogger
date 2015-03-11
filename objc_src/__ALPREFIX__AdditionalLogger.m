@@ -1,18 +1,18 @@
 //
-//  __ALPREFIX__Logger.m, create by TODO
+//  __ALPREFIX__AdditionalLogger.m, create by https://github.com/imoldman/AdditionalLogger
 //
 
-#import "__ALPREFIX__Logger.h"
+#import "__ALPREFIX__AdditionalLogger.h"
 
-@interface __ALPREFIX__Logger ()
+@interface __ALPREFIX__AdditionalLogger ()
 @property (nonatomic, copy) ALLoggerBlockType logBlock;
 @end
 
-@implementation __ALPREFIX__Logger
+@implementation __ALPREFIX__AdditionalLogger
 
 + (instancetype)sharedInstance
 {
-    static __ALPREFIX__Logger* instance = nil;
+    static __ALPREFIX__AdditionalLogger* instance = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         instance = [[self alloc] init];
@@ -22,12 +22,12 @@
 
 + (void)setBlock:(ALLoggerBlockType)block
 {
-    [[__ALPREFIX__Logger sharedInstance] setLogBlock:block];
+    [[self sharedInstance] setLogBlock:block];
 }
 
 + (ALLoggerBlockType)block
 {
-    return [[__ALPREFIX__Logger sharedInstance] logBlock];
+    return [[self sharedInstance] logBlock];
 }
 
 + (void)logWithLevel:(int)level file:(const char *)fullpath line:(int)line prefix:(const char*)prefix log:(NSString *)log, ...
