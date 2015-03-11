@@ -30,6 +30,9 @@ def build(prefix):
   prefix_upper = prefix.upper()
   for cur, dirs, files in os.walk(dest_path):
     for name in files:
+      # we only modify source code
+      if not re.match('.*\.[h|m|mm|c|cpp|cxx]', name):
+        continue
       path = os.path.join(cur, name)
       upper_pattern = 's/%s/%s/g' % (UPPER_PLACEHOLDER, prefix_upper)
       common_pattern = 's/%s/%s/g' % (COMMON_PLACEHOLDER, prefix)
