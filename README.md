@@ -51,4 +51,8 @@ Sometimes, in iOS/OSX, we need log message in some third-party library, but the 
 1. Q: Can I add the additional logger to multi library at the same time?
 
    A: Sure. Just don't forget init the additional logger in your `AppDelegate`.
+   
+## Acknowledgements
+
+The basic version is complete by [@familymrfan](https://github.com/familymrfan), thanks him!
 
