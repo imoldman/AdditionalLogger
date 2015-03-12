@@ -14,7 +14,7 @@ Sometimes, in iOS/OSX, we need log message in some third-party library, but the 
 	
 1. **Add source code to your project**. If no error occured, you can find the source code in `./generated` sub directory, as shown below. Then add the source code to your project.
 
-	![](./dismiss_ios7.gif)
+	![](https://raw.githubusercontent.com/imoldman/AdditionalLogger/master/res/FMDBAdditionalLogger.png)
 1. **Init the additional logger**. Put following code to `- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions` in your `AppDelegate`
 
 	```
@@ -27,7 +27,7 @@ Sometimes, in iOS/OSX, we need log message in some third-party library, but the 
     };
     [FMDBAdditionalLogger setBlock:block];
     ```
- 1. **Log message to library**. Now you can log in FMDB!
+1. **Log message to library**. Now you can log in FMDB!
  
 	```
 	#import "FMDBAdditionalLogger.h"
