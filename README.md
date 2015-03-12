@@ -1,12 +1,12 @@
-AdditionalLogger
-===
+# AdditionalLogger
+---
 
-**Summary**
+## What is this?
 
 Sometimes, in iOS/OSX, we need log message in some third-party library, but the library often doesn't provide support for logging. This tool can make source code for additional logger. After a simple configuration, you can log anything in the library.
 
 
-**How To Use**
+## How To Use
 
 1. **Make source code**. use the `build.py` to make source code. For example, if you want to and additional logger to `FMDB` library, you can 
 	
@@ -41,7 +41,7 @@ Sometimes, in iOS/OSX, we need log message in some third-party library, but the 
 }
 	```
 	
-**FAQ**
+## FAQ
 
 1. Q: Why I must have a prefix?
 	
