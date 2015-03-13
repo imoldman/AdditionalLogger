@@ -10,12 +10,14 @@ Sometimes, in iOS/OSX, we need log message in some third-party library, but the 
 
 1. **Make source code**. use the `build.py` to make source code. For example, if you want to and additional logger to `FMDB` library, you can 
 	
-	`$ ./build.py --prefix=FMDB`
+	```
+	$ ./build.py --prefix=FMDB
+	```
 	
 1. **Add source code to your project**. If no error occured, you can find the source code in `./generated` sub directory, as shown below. Then add the source code to your project.
 
 	![](https://raw.githubusercontent.com/imoldman/AdditionalLogger/master/res/FMDBAdditionalLogger.png)
-1. **Init the additional logger**. Put following code to `- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions` in your `AppDelegate`
+1. **Init the additional logger**. If you use [CocoaLumberjack](https://github.com/CocoaLumberjack/CocoaLumberjack) as your logger, like me, just put following code to `- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions` in your `AppDelegate`
 
 	```
 	#import "FMDBAdditionalLogger.h"
@@ -23,7 +25,7 @@ Sometimes, in iOS/OSX, we need log message in some third-party library, but the 
 	
     ```
 	ALLoggerBlockType block = ^(int level, const char* fullpath, int line, const char* prefix, NSString* content) {	
-        NSLog(@"%d [%s] %@ [%@:%d]", level, prefix, content, fullPath, line);
+        DDLogInfo(@"%d [%s] %@ [%@:%d]", level, prefix, content, fullPath, line);
     };
     [FMDBAdditionalLogger setBlock:block];
     ```
