@@ -56,5 +56,5 @@ Sometimes, in iOS/OSX, we need log message in some third-party library, but the 
    
 ## Acknowledgements
 
-The basic version is complete by [@familymrfan](https://github.com/familymrfan), thanks him!
+The basic version is completed by [@familymrfan](https://github.com/familymrfan), thanks him!
 
